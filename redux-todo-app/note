@@ -1,0 +1,24 @@
+Có! Hãy xem luồng hoạt động Redux của ứng dụng Todo List trong đoạn code trên:
+
+### Bước 1: Khởi tạo Store
+
+File `store.js` sử dụng `configureStore` của Redux Toolkit để tạo Redux store. Trong ví dụ này, chúng ta chỉ có một reducer là `todosReducer` từ `todosSlice`.
+
+### Bước 2: Tạo Slice
+
+Trong `todosSlice.js`, chúng ta sử dụng `createSlice` của Redux Toolkit để tạo một slice của Redux, trong đó bao gồm:
+
+- **Initial State**: Đây là trạng thái ban đầu của slice, trong trường hợp này là `list` chứa danh sách các todos.
+- **Reducers**: Chúng ta định nghĩa các reducers để thay đổi state của todos. Trong trường hợp này, chỉ có hai reducers là `addTodo` và `deleteTodo` để thêm và xóa các công việc.
+
+### Bước 3: Sử dụng Redux trong Component
+
+Trong `App.jsx`, chúng ta sử dụng hook `useSelector` để chọn phần state từ Redux store, cụ thể là `state.todos.list` chứa danh sách các todos. `useDispatch` giúp chúng ta gửi các actions đến store.
+
+- **Thêm Todo**: Khi người dùng nhập một công việc mới và ấn nút "Add", hàm `handleAddTodo` được gọi. Nó dispatch một action `addTodo` với nội dung mới. Action này được xử lý bởi reducer `addTodo` trong slice và công việc mới được thêm vào danh sách todos.
+  
+- **Xóa Todo**: Khi người dùng ấn nút "Delete" trên một công việc, `handleDeleteTodo` được gọi với id của công việc cần xóa. Nó dispatch một action `deleteTodo` với id tương ứng. Reducer `deleteTodo` xử lý action này và loại bỏ công việc có id tương ứng khỏi danh sách todos.
+
+### Bước 4: Cập nhật UI
+
+Khi state trong Redux store thay đổi thông qua việc dispatch các actions, `useSelector` trong component tự động chạy lại để lấy state mới. Danh sách các todos được cập nhật và giao diện người dùng hiển thị các thay đổi này một cách tự động.
