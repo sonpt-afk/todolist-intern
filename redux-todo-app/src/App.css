@@ -1,4 +1,117 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-.ant-select-multiple .ant-select-selection-item {
-  height: 27px;
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(44,4,48);
+background: linear-gradient(177deg, rgba(44,4,48,0) 0%, rgba(250,0,247,1) 38%, rgba(0,240,255,1) 100%);
+}
+
+.app{
+  width: 700px;
+  height: 500px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.app-form{
+  width: 100%;
+  height: 17%;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-form-input{
+  width: 309px;
+  height: 40px;
+  font-size: 20px;
+  padding-left: 30px;
+}
+.app-result{
+  flex:1;
+padding: 30px;
+}
+.app-list{
+  position: absolute;
+  left: 400px;
+  width: 400px;
+}
+
+.app-list li{
+  margin: 20px;
+  font-size: 20px;
+  width: 360px;
+}
+
+.app-list-item{
+  position: relative;
+
+}
+.btn-add{
+height: 40px;
+width: 80px;
+background-color: #000;
+color: white;
+font-weight: bold;
+border-radius: 10px;
+margin-left: 30px;
+}
+
+.btn-add:hover{
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+.btn-edit{
+background-color: blue;
+color: white;
+height: 30px;
+border-radius: 10px;
+width: 60px;
+margin-right: 20px;
+}
+
+.btn-edit:hover{
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+.btn-delete{
+background-color: red;
+color: white;
+height: 30px;
+border-radius: 10px;
+width: 84px;
+}
+.btn-delete:hover{
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+.btn-save{
+  height: 40px;
+  width: 80px;
+  background: #000;
+  color: white;
+}
+
+.btn-save:hover{
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+.btn-group{
+  position: absolute;
+  left: 200px;
+  display: flex;
+  top: 0px;
 }

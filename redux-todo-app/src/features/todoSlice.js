@@ -18,11 +18,16 @@ export const counterSlice = createSlice({
     deleteTask:(state,action)=>{
       state.list=state.list.filter((todo) => todo.id !== action.payload)
     },
-   
+   updateTask:(state,action)=>{
+    const { id, text } = action.payload;
+    const updatedTask =  state.list.find((todo)=> todo.id  === id)
+    updatedTask.text = text
+   }
   },
 })
 
 // Action creators are generated for each case reducer function
 export const { addTask, deleteTask,updateTask } = counterSlice.actions
+
 
 export default counterSlice.reducer
