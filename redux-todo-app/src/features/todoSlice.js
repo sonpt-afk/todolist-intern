@@ -19,13 +19,15 @@ export const counterSlice = createSlice({
       state.list=state.list.filter((todo) => todo.id !== action.payload)
     },
    updateTask:(state,action)=>{
-    const {id,text} = action.payload;
-    const selectedUpdateTask =  state.list.find((task) => task.id === id)
-    if(selectedUpdateTask){
-      selectedUpdateTask.text  =text
+   const {id,text,priority} = action.payload
+   const selectedUpdateTask = state.list.find((task) => task.id === id)
+   if(selectedUpdateTask){
 
-    }
+   selectedUpdateTask.text = text
+   selectedUpdateTask.priority = priority
    }
+  }
+
   },
 })
 

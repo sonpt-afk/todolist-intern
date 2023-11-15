@@ -42,7 +42,7 @@ function handleEditTask(task){
 }
 
 function handleSaveEditedTask(){
-  dispatch(updateTask({id:selectedTask.id , text:selectedTask.text}))
+  dispatch(updateTask({id:selectedTask.id , text:selectedTask.text ,priority:selectedTask.priority}))
 
   setSelectedTask(null)
   setShowModal(false)
@@ -110,6 +110,8 @@ return(
               <div className="modal-content">
               <input className="modal-input" type="text" value={selectedTask.text} placeholder="Input new task name"
              onChange={(e)=> setSelectedTask({...selectedTask,text: e.target.value})}/>
+              <input className="modal-input" type="text" value={selectedTask.priority} placeholder="Input new task priority"
+             onChange={(e)=> setSelectedTask({...selectedTask,priority: e.target.value})}/>
   
               </div>
             </div>
