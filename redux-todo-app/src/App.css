@@ -22,11 +22,35 @@ background: linear-gradient(177deg, rgba(44,4,48,0) 0%, rgba(250,0,247,1) 38%, r
 }
 .app-form{
   width: 100%;
-  height: 17%;
+  height: 25%;
   border: 1px solid #ccc;
   display: flex;
-  justify-content: center;
   align-items: center;
+  /* justify-content: space-between; */
+}
+
+.errorMsg{
+  margin-left: 80px;
+}
+#form-add{
+ width: 100%;
+height: 50px;
+}
+
+.priority{
+  font-size: 17px;
+}
+
+.form-add-row{
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+.form-add-row select{
+  height: 23px;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
 }
 
 .app-form-input{
@@ -34,26 +58,38 @@ background: linear-gradient(177deg, rgba(44,4,48,0) 0%, rgba(250,0,247,1) 38%, r
   height: 40px;
   font-size: 20px;
   padding-left: 30px;
+  margin-left: 60px;
 }
 .app-result{
   flex:1;
 padding: 30px;
+position: relative;
 }
 .app-list{
-  position: absolute;
-  left: 400px;
-  width: 400px;
+  width: 456px;
+  margin-left: 72px;
+}
+
+.app-list-priority{
+  border: 1px solid #000;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 27px;
 }
 
 .app-list li{
   margin: 20px;
   font-size: 20px;
-  width: 360px;
+  width: 105px;
 }
 
 .app-list-item{
-  position: relative;
-
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
 }
 .btn-add{
 height: 40px;
@@ -110,8 +146,11 @@ width: 84px;
 }
 
 .btn-group{
-  position: absolute;
-  left: 200px;
+  /* position: absolute;
+  left: 200px; */
   display: flex;
   top: 0px;
+  justify-content: center;
+  align-items: center;
 }
+
