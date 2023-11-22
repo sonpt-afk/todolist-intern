@@ -1,26 +1,31 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(44,4,48);
-background: linear-gradient(177deg, rgba(44,4,48,0) 0%, rgba(250,0,247,1) 38%, rgba(0,240,255,1) 100%);
+  background: rgb(44, 4, 48);
+  background: linear-gradient(
+    177deg,
+    rgba(44, 4, 48, 0) 0%,
+    rgba(250, 0, 247, 1) 38%,
+    rgba(0, 240, 255, 1) 100%
+  );
 }
 
-.app{
+.app {
   width: 700px;
   height: 500px;
   background-color: #fff;
   display: flex;
   flex-direction: column;
 }
-.app-form{
+.app-form {
   width: 100%;
   height: 25%;
   border: 1px solid #ccc;
@@ -29,48 +34,48 @@ background: linear-gradient(177deg, rgba(44,4,48,0) 0%, rgba(250,0,247,1) 38%, r
   /* justify-content: space-between; */
 }
 
-.errorMsg{
+.errorMsg {
   margin-left: 80px;
 }
-#form-add{
- width: 100%;
-height: 50px;
+#form-add {
+  width: 100%;
+  height: 50px;
 }
 
-.priority{
+.priority {
   font-size: 17px;
 }
 
-.form-add-row{
+.form-add-row {
   display: flex;
   justify-content: space-around;
-  gap: 30px;
+  gap: 10px;
 }
-.form-add-row select{
+.form-add-row select {
   height: 23px;
   display: flex;
   justify-content: center;
   font-size: 16px;
 }
 
-.app-form-input{
+.app-form-input {
   width: 309px;
   height: 40px;
   font-size: 20px;
   padding-left: 30px;
   margin-left: 60px;
 }
-.app-result{
-  flex:1;
-padding: 30px;
-position: relative;
+.app-result {
+  flex: 1;
+  padding: 30px;
+  position: relative;
 }
-.app-list{
+.app-list {
   width: 456px;
   margin-left: 72px;
 }
 
-.app-list-priority{
+.app-list-priority {
   border: 1px solid #000;
   width: 70px;
   display: flex;
@@ -79,73 +84,73 @@ position: relative;
   height: 27px;
 }
 
-.app-list li{
+.app-list li {
   margin: 20px;
   font-size: 20px;
   width: 105px;
 }
 
-.app-list-item{
+.app-list-item {
   display: flex;
   justify-content: space-between;
   width: 100%;
   align-items: center;
 }
-.btn-add{
-height: 40px;
-width: 80px;
-background-color: #000;
-color: white;
-font-weight: bold;
-border-radius: 10px;
-margin-left: 30px;
+.btn-add {
+  height: 40px;
+  width: 80px;
+  background-color: #000;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-left: 30px;
 }
 
-.btn-add:hover{
+.btn-add:hover {
   background-color: #fff;
   color: #000;
   cursor: pointer;
 }
-.btn-edit{
-background-color: blue;
-color: white;
-height: 30px;
-border-radius: 10px;
-width: 60px;
-margin-right: 20px;
+.btn-edit {
+  background-color: blue;
+  color: white;
+  height: 30px;
+  border-radius: 10px;
+  width: 60px;
+  margin-right: 20px;
 }
 
-.btn-edit:hover{
+.btn-edit:hover {
   background-color: #fff;
   color: #000;
   cursor: pointer;
 }
-.btn-delete{
-background-color: red;
-color: white;
-height: 30px;
-border-radius: 10px;
-width: 84px;
+.btn-delete {
+  background-color: red;
+  color: white;
+  height: 30px;
+  border-radius: 10px;
+  width: 84px;
 }
-.btn-delete:hover{
+.btn-delete:hover {
   background-color: #fff;
   color: #000;
   cursor: pointer;
 }
-.btn-save{
+.btn-save {
   height: 40px;
   width: 80px;
   background: #000;
   color: white;
 }
 
-.btn-save:hover{
+.btn-save:hover {
   background-color: #fff;
   color: #000;
   cursor: pointer;
 }
 
-.btn-group{
+.btn-group {
   /* position: absolute;
   left: 200px; */
   display: flex;
@@ -153,4 +158,3 @@ width: 84px;
   justify-content: center;
   align-items: center;
 }
-
